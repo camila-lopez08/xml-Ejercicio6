@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name = "listacursos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name = "curso"  maxOccurs="unbounded" minOccurs="0" >
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name = "alumno">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type = "xs:string" name = "dni"/>
+                                        <xs:element type = "xs:string" name = "nombre"/>
+                                        <xs:element type = "xs:string" name = "apellido1"/>
+                                        <xs:element name = "listaasignaturas">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name = "asignatura">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element type = "xs:string" name = "nombre"/>
+                                                                <xs:element name = "profesor">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:element type = "xs:byte" name = "nrp"/>
+                                                                            <xs:element type = "xs:string" name = "nombre"/>
+                                                                            <xs:element type = "xs:string" name = "apellido1"/>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute type="xs:short" name="codigo" use="optional"/>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element type = "xs:string" name = "apellido2"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

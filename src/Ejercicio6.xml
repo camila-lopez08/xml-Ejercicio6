@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listacursos SYSTEM  "Ejercicio6.dtd">
+<listacursos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="Ejercicio6.xsd">
+
+    <curso>
+        <alumno>
+            <dni>e-1000872026</dni>
+            <nombre>camila</nombre>
+            <apellido1>lopez</apellido1>
+            <listaasignaturas>
+                <asignatura codigo="23201">
+                    <nombre>Sistemas Operativos</nombre>
+                    <profesor>
+                        <nrp>4</nrp>
+                        <nombre>Carlos</nombre>
+                        <apellido1>Builes</apellido1>
+                    </profesor>
+                </asignatura>
+            </listaasignaturas>
+        </alumno>
+    </curso>
+    <curso>
+        <alumno>
+            <dni>e-1000872026</dni>
+            <nombre>camila</nombre>
+            <apellido1>lopez</apellido1>
+            <apellido2>Gutierrez</apellido2>
+            <listaasignaturas>
+                <asignatura codigo="23201">
+                    <nombre>Sistemas Operativos</nombre>
+                    <profesor>
+                        <nrp>4</nrp>
+                        <nombre>Carlos</nombre>
+                        <apellido1>Builes</apellido1>
+                    </profesor>
+                </asignatura>
+            </listaasignaturas>
+        </alumno>
+    </curso>
+</listacursos>
